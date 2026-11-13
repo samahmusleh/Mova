@@ -1,0 +1,26 @@
+{
+  "name": "mova",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MOVA: Moving Our Young Ahead. Students who miss class become mentors to younger students. Michigan DevFest Hackathon prototype.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"node server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "setup": "npm install && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
